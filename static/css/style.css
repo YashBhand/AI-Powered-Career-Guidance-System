@@ -1,0 +1,615 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4ff;
+    color: #25264a;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(50, 50, 100, 0.10);
+}
+
+/* MAIN HEADING */
+h1 {
+    text-align: center;
+    color: #4338ca;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.container > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* CAREER CARDS */
+.career-card {
+    background: linear-gradient(135deg, #eef2ff, #f5f0ff);
+    padding: 25px;
+    margin: 20px 0;
+    border-left: 6px solid #6366f1;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(80, 70, 180, 0.15);
+}
+
+.career-card h2 {
+    color: #4338ca;
+    margin-bottom: 12px;
+}
+
+.career-card p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* GENERAL LINKS */
+a {
+    text-decoration: none;
+    color: #4338ca;
+}
+
+a:hover {
+    color: #3730a3;
+}
+
+/* BUTTONS */
+button {
+    padding: 12px 22px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+/* LOGIN AND REGISTER PAGE */
+.auth-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box h1 {
+    text-align: center;
+}
+
+.auth-box p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-box label {
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.auth-box button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.auth-box a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: #4338ca;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .auth-box {
+        padding: 20px;
+    }
+}
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.auth-box {
+    display: block;
+    float: none;
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.auth-box select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* =========================
+   HOME PAGE DESIGN
+========================= */
+
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 15px 5%;
+    background: #4338ca;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    background: transparent;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.navbar a:hover {
+    background: #3730a3;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    min-height: 400px;
+    padding: 80px 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #4338ca;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    margin-top: 10px;
+}
+
+/* Features section */
+.features {
+    width: 100%;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.features > h2 {
+    color: #4338ca;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Feature cards */
+.cards {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 330px;
+    padding: 30px 20px;
+
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(50, 50, 100, 0.10);
+}
+
+.card h3 {
+    color: #4338ca;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Home page on mobile */
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar div {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* =========================
+   PROFESSIONAL DASHBOARD
+========================= */
+
+.dashboard-navbar {
+    width: 100%;
+    padding: 18px 5%;
+    background: #4338ca;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-navbar h2 {
+    color: white;
+}
+
+.dashboard-navbar a {
+    color: white;
+    background: #3730a3;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.welcome-banner {
+    background: linear-gradient(135deg, #4338ca, #7c3aed);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 18px;
+    margin-bottom: 35px;
+}
+
+.welcome-banner h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.welcome-banner p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.dashboard-title {
+    color: #4338ca;
+    margin-bottom: 12px;
+}
+
+.dashboard-description {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.dashboard-card {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(50, 50, 100, 0.10);
+}
+
+.dashboard-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h2 {
+    color: #4338ca;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.dashboard-button {
+    display: inline-block;
+    background: #4f46e5;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.dashboard-button:hover {
+    background: #3730a3;
+    color: white;
+}
+
+.dashboard-footer {
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* =========================
+   CAREER RESULTS PAGE
+========================= */
+
+.results-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.results-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.results-header h1 {
+    color: #4338ca;
+    font-size: 32px;
+}
+
+.results-header p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Result card */
+.result-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border-left: 6px solid #6366f1;
+    box-shadow: 0 5px 20px rgba(50, 50, 100, 0.10);
+}
+
+/* Career heading */
+.result-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.result-heading h2 {
+    color: #4338ca;
+    margin: 0;
+}
+
+.rank-number {
+    width: 40px;
+    height: 40px;
+    background: #4338ca;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.career-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* AI match score */
+.similarity-section {
+    margin: 20px 0;
+}
+
+.similarity-section strong {
+    color: #333;
+}
+
+.similarity-section span {
+    float: right;
+    color: #4338ca;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4338ca, #8b5cf6);
+    border-radius: 10px;
+}
+
+/* Course details */
+.course-section {
+    background: #f3f4ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.course-section h3 {
+    color: #4338ca;
+    margin-bottom: 12px;
+}
+
+.course-section h4 {
+    color: #25264a;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.course-section p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Back button */
+.results-footer {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.back-button {
+    display: inline-block;
+    background: #4338ca;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.back-button:hover {
+    background: #3730a3;
+    color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .results-container {
+        width: 95%;
+    }
+
+    .result-card {
+        padding: 20px;
+    }
+
+    .results-header h1 {
+        font-size: 26px;
+    }
+}
+
+
+

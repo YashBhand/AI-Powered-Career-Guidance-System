@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard - CareerGuide AI</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="dashboard-navbar">
+        <h2>CareerGuide AI</h2>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+
+    <div class="dashboard-container">
+
+        <div class="welcome-banner">
+            <h1>Welcome, {{ name }}!</h1>
+            <p>Your future starts with the right career decision.</p>
+        </div>
+
+        <h2 class="dashboard-title">Student Dashboard</h2>
+
+        <p class="dashboard-description">
+            Explore career opportunities based on your education,
+            interests and skills.
+        </p>
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-icon">🎯</div>
+
+            <h2>Career Assessment</h2>
+
+            <p>
+                Take a personalized career assessment and discover
+                the best career options for your future.
+            </p>
+
+            <a href="{{ url_for('assessment') }}"
+               class="dashboard-button">
+                Start Career Assessment
+            </a>
+
+        </div>
+
+        <div class="dashboard-footer">
+            <p>AI-Powered Personalized Career Guidance System</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

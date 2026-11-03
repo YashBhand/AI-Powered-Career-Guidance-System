@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Career Guidance System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>CareerGuide AI</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="#">About</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <h1>Discover Your Future Career!</h1>
+
+        <h2>AI-Powered Personalized Career Guidance</h2>
+
+        <p>
+            Explore the right career opportunities based on your
+            interests, skills, education and passion.
+        </p>
+
+        <button onclick="window.location.href='{{ url_for('assessment') }}'">
+    Get Started
+</button>
+
+    </section>
+
+    <section class="features">
+
+        <h2>What We Offer</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Career Prediction</h3>
+                <p>Discover suitable career options using machine learning.</p>
+            </div>
+
+            <div class="card">
+                <h3>Skill Analysis</h3>
+                <p>Understand your strengths and identify skills to improve.</p>
+            </div>
+
+            <div class="card">
+                <h3>Course Recommendations</h3>
+                <p>Find courses that match your career interests.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
